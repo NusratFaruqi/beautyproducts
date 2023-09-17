@@ -1,0 +1,137 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the entire page */
+body {
+  background-image: url("./content-pixie-TxBQ7yLj6JU-unsplash.jpg"); /* Replace with your background image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Style the category description section */
+#category-description {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto; /* Center horizontally */
+  max-width: 800px; /* Limit maximum width */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#category-description h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#category-description p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Style the Moisturizer product containers */
+/* Styles specific to the "Moisturizer" category page */
+
+/* Style the Moisturizer product rows */
+.moisturizer-row {
+  display: flex; /* Use flexbox to create a row layout */
+  justify-content: space-between; /* Space elements evenly within the row */
+  flex-wrap: wrap; /* Allow rows to wrap to a new line on smaller screens */
+}
+
+.moisturizer-product {
+  text-align: center;
+  width: calc(
+    50% - 20px
+  ); /* Set the width for each product to 50% minus margin */
+  margin: 10px; /* Add margin to separate products */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.moisturizer-product img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+}
+
+.moisturizer-product h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.moisturizer-product p {
+  font-size: 1.2em;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Style the "Read More" button */
+.read-more-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+  background-color: #555;
+}
+
+/* Additional styles can be added as needed */
+.full-description {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.full-description.expanded {
+  height: auto;
+  opacity: 1;
+}

@@ -1,0 +1,31 @@
+/* Customize styles for Cosrx brand */
+header {
+  background-color: #f5a623; /* Cosrx brand color */
+  text-align: center;
+  padding: 20px 0;
+}
+/* Add this CSS to your cosrx.css or style.css file */
+header a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Set the color of the link text */
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px; /* Add spacing between products */
+}
+
+.product {
+  background-color: #fff3e2; /* Cosrx product background color */
+  border-color: #f5a623; /* Cosrx product border color */
+  padding: 20px;
+  flex: 0 0 auto; /* Prevent products from shrinking or growing */
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  min-width: 300px; /* Set a minimum width for each product */
+}
+
+/* Add more specific styles for Cosrx products if needed */
